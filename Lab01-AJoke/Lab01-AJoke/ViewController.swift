@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet var jokeLabel: UILabel!
     @IBOutlet var punchlineLabel: UILabel!
     
