@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab01_AJoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="448" affinity="minY"/>
+                            <userLayoutGuide location="448" affinity="minY"/>
+                            <userLayoutGuide location="448" affinity="minY"/>
+                            <userLayoutGuide location="448" affinity="minY"/>
+                            <userLayoutGuide location="448" affinity="minY"/>
+                            <userLayoutGuide location="448" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPx-a2-EVm">
+                                <rect key="frame" x="69" y="148" width="276" height="143"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Punch Line" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qlh-Al-hea">
+                                <rect key="frame" x="69" y="337" width="276" height="111"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLE-i9-eHA">
+                                <rect key="frame" x="69" y="299" width="276" height="30"/>
+                                <state key="normal" title="Show Joke"/>
+                                <connections>
+                                    <action selector="showJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPM-pj-KM3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7V-ew-MDT">
+                                <rect key="frame" x="69" y="448" width="276" height="30"/>
+                                <state key="normal" title="Show Punch Line"/>
+                                <connections>
+                                    <action selector="showPunchline:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAY-hu-rSC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uPx-a2-EVm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="1Jg-vJ-oIq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uPx-a2-EVm" secondAttribute="trailing" constant="69" id="4nX-7e-Hsu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qlh-Al-hea" secondAttribute="trailing" constant="69" id="51h-b0-hTQ"/>
+                            <constraint firstItem="R7V-ew-MDT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="7jG-dh-PvB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NLE-i9-eHA" secondAttribute="trailing" constant="69" id="DS0-VF-9oh"/>
+                            <constraint firstItem="NLE-i9-eHA" firstAttribute="top" secondItem="uPx-a2-EVm" secondAttribute="bottom" constant="8" symbolic="YES" id="Iyp-yj-ufJ"/>
+                            <constraint firstItem="Qlh-Al-hea" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="OkR-J5-uxL"/>
+                            <constraint firstItem="R7V-ew-MDT" firstAttribute="top" secondItem="Qlh-Al-hea" secondAttribute="bottom" constant="8" symbolic="YES" id="OvI-lq-7HC"/>
+                            <constraint firstItem="uPx-a2-EVm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="SnW-eO-8B4"/>
+                            <constraint firstItem="NLE-i9-eHA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="YcG-X8-tLj"/>
+                            <constraint firstItem="Qlh-Al-hea" firstAttribute="top" secondItem="NLE-i9-eHA" secondAttribute="bottom" constant="71" id="oRq-4t-IgI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R7V-ew-MDT" secondAttribute="trailing" constant="69" id="zkl-WD-6Y6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jokeLabel" destination="uPx-a2-EVm" id="D6T-MF-WUH"/>
+                        <outlet property="punchlineLabel" destination="Qlh-Al-hea" id="ZJb-BY-WzH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
